@@ -25,7 +25,7 @@ RUN mkdir -p /tmp/download \
     && chmod +x /usr/local/bin/docker \
     && rm -rf /tmp/download
 
-ARG TERRAFORM_VERSION="0.12.3"
+ARG TERRAFORM_VERSION
 ENV TERRAFORM_DOWNLOAD_URL="https://releases.hashicorp.com/terraform/$TERRAFORM_VERSION/terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
 
 RUN mkdir -p /tmp/download \
